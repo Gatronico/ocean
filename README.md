@@ -30,3 +30,14 @@ All of the classes and a small demonstration live inside the single
 `example.py` file.  Running it will open a long trade and then a short
 trade using the same `Sardina` instance, showing that the rules work
 igual para ambos sentidos.
+
+## GUI Demo with MetaTrader 5
+
+The script `sardina_mt5_gui.py` provides a simple Tkinter interface to
+start or stop a real-time `Sardina` bot. It connects to MetaTrader 5,
+fetches minute data and logs trade events in a text box. When a trade
+is opened, it also places a **demo** order on MetaTrader 5 with a small
+lote de `0.01`. Use the "Mostrar Operaciones" button to view the
+`trade_log` at any time. Ensure the `MetaTrader5` Python package is
+installed and that a MetaTrader 5 terminal is available for the
+connection to succeed.
